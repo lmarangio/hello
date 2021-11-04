@@ -60,41 +60,18 @@ talks:
 publications:
   - year: 2021
     pubs:
-      # - dtp+21
-      - rsg+21
-  - year: 2020
-    pubs:
-      - grb20
+      - fourier
+      - lda
+      - thesis
   - year: 2019
     pubs:
-      - r19
-      - trc19
-      - rtc19
+      - arnold
+      - garbo
+      - sec19
   - year: 2018
     pubs:
-      - rtc18
-      - rit+18
-      - mrm18
-  - year: 2017
-    pubs:
-      - mmrm17
-  - year: 2016
-    pubs:
-      - rtc16
-      - rsj+16
-  - year: 2015
-    pubs:
-      - rjc15
-      - srcf15
-      - shr+15
-      - cvh+15
-  - year: 2014
-    pubs:
-      - mrcm14
-  - year: 2013
-    pubs:
-      - spr13
-      - prs13
+      - lib
+      - ieee18
 
 projects:
   sort_by: stars # pushed | stars
