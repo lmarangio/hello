@@ -122,20 +122,20 @@ projects:
   limit: 10
   exclude:
     archived: false
-    forks: true
+    forks: false
     projects:
       - lmarangio.github.io
   external: # static repo jsons in _data/projects.yml
     projects:
-      - tma
+      #- tma
 
 # Repositories not owned by me
-jekyll_get_json:
-  - data: gtolias/tma
-    json: 'https://api.github.com/repos/gtolias/tma'
+#jekyll_get_json:
+#  - data: gtolias/tma
+#    json: 'https://api.github.com/repos/gtolias/tma'
 
 social_media:
-  #googlescholar: LV6XQ00AAAAJ
+  googlescholar: YE9A7UEAAAAJ
   github: lmarangio
 
 social_media_short:
