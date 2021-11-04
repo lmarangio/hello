@@ -122,7 +122,7 @@ projects:
   limit: 10
   exclude:
     archived: false
-    forks: false
+    forks: true
     projects:
       - lmarangio.github.io
   external: # static repo jsons in _data/projects.yml
