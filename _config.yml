@@ -125,9 +125,9 @@ projects:
     forks: false
     projects:
       - lmarangio.github.io
-  external: # static repo jsons in _data/projects.yml
-    projects:
-      #- tma
+  #external: # static repo jsons in _data/projects.yml
+  #  projects:
+  #    - tma
 
 # Repositories not owned by me
 #jekyll_get_json:
