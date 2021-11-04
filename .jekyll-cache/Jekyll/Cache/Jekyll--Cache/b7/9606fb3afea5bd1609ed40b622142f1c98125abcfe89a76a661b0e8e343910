@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": null,
   "baseurl": "/pages/lmarangio/lmarangio.github.io",
-  "build_revision": "6c3cc159a87b405fe3aab8af6a2c95753610ad12",
+  "build_revision": "9cb694ec6cdd83da78b59cb786047341e68fadce",
   "clone_url": "https://github.com/lmarangio/lmarangio.github.io.git",
   "contributors": false,
   "disabled": null,
@@ -67,4 +67,4 @@
   },
   "wiki_url": null,
   "zip_url": "https://github.com/lmarangio/lmarangio.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000000012c9c3830 @key="title", @value=#<Proc:0x000000012c9c3858@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x000000012c9c3740 @key="description", @value=#<Proc:0x000000012c9c3768@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x00000001233a3aa8 @key="title", @value=#<Proc:0x00000001233a3af8@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x00000001233a3990 @key="description", @value=#<Proc:0x00000001233a39b8@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET
