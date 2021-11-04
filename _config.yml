@@ -34,6 +34,10 @@ defaults:
 updates:
   limit: 5
   news:
+    - date: '11/2021'
+      content: 'Google Data Analytics Professional Certification, Ask Questions to Make Data-Driven Decisions'
+    - date: '11/2021'
+      content: 'Google Data Analytics Professional Certification, Foundations: Data, Data, Everywhere'
     - date: '31/10/2021'
       content: 'New paper coming up: A posteriori validated numerical method for the computation of stationary measures based on Fourier approximation.'
     - date: '01/06/2021'
@@ -42,23 +46,16 @@ updates:
       content: 'Defended Ph.D. Thesis at the Pisa/Bourgogne Franche-Comté University.'
 
 awards:
-  - reviewer
-  - ctu19
-  - cski19
-  - feectu19
-  # - cvww18
-  - ucg12
-  - ikcg12
-  - epcg11
-  - podgorica10
-  - canu10
-  - etfucg
+  - honorary
+  - brazil
+  - vinci
 
 talks:
-  - fhua18
-  - mlmu17
-  - mlpw17
-  - prcvc15
+  - sec19
+  - beyond
+  - CSM18
+  - Mena18
+  - Seq18
 
 publications:
   - year: 2021

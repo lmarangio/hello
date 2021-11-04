@@ -1,27 +1,32 @@
-fhua18:
-  id: fhua18
-  title: 'Large Scale Image Retrieval'
-  where: 'Upper Austria University of Applied Sciences, Hagenberg 2018'
+sec19:
+  id: sec19
+  title: 'Entropy and security of pseudorandom number generators based on chaotic iterations'
+  where: 'Secrypt 2019, Prague'
   # slides: '/talks/fhua18.pdf'
 
-mlmu17:
-  id: mlmu17
-  title: 'Image Retrieval Overview'
-  where: 'Machine Learning Meetups, Prague 2017'
+beyond:
+  id: beyond
+  title: 'Arnold’s map as a toy model for ENSO: a rigorous investigation'
+  where: 'Dynamical Systems and Beyond, Pisa 2019'
   # slides: '/talks/mlmu17.pdf'
-  web: 'http://www.mlmu.cz/archiv'
-  video: 'https://youtu.be/N21LfZc110w'
+  #web: 'http://www.mlmu.cz/archiv'
+  #video: 'https://youtu.be/N21LfZc110w'
 
-mlpw17:
-  id: mlpw17
-  title: 'Image Retrieval: From basics to recent advances'
-  where: Machine Learning Prague Workshop 2017
+CSM18:
+  id: CSM18
+  title: 'A data-driven approach to transfer operators in nonlinear dynamics'
+  where: 'CMStatistic 2018, Pisa'
   # slides: '/talks/mlpw17.pdf'
-  web: 'http://2017.mlprague.com'
+  #web: 'http://2017.mlprague.com'
 
-prcvc15:
-  id: prcvc15
-  title: 'Image Retrieval 2.0'
-  where: 'Pattern Recognition and Computer Vision Colloquium, Prague 2015'
-  # slides: '/talks/prcvc15.pdf'
-  web: 'http://cmp.felk.cvut.cz/cmp/events/colloquium-2015.11.12'
+Mena18:
+  id: Mena18
+  title: 'On the collision property of chaotic iterations based post-treatments over cryptographic pseudorandom number generator.'
+  where: 'Menacomm 2018, Beirut'
+  # slides: '/talks/mlpw17.pdf'
+  #web: 'http://2017.mlprague.com'
+
+Seq18:
+  id: Seq18
+  title: 'Unfoldable self-avoiding walks'
+  where: 'SeqBio 2017, Lille'

@@ -1,61 +1,14 @@
-reviewer:
-  id: reviewer
-  title: 'Outstanding Reviewer Awards'
-  where: 'CVPR 2020, 2019; ACCV 2020; BMVC 2019 (HM)'
+honorary:
+  id: honorary
+  title: 'Honorary Fellow in Mathematical Analysis'
+  where: 'Math department, University of Pisa'
   
-ctu19:
-  id: ctu19
-  title: 'Rector''s Prize for Prestigious Scientific Publication'
-  where: 'CTU in Prague 2019'
-  pdf: '/awards/ctu19.pdf'
-  web: 'https://cyber.felk.cvut.cz/news/cesky-filip-radenovic-ph-d-obdrzel-cenu-rektora-cvut-2019-za-vynikajici-vysledky-ve-vyzkumu/'
-
-cski19:
-  id: cski19
-  title: 'Antonin Svoboda Award for the Best PhD Thesis'
-  where: 'Czech Society for Cybernetics and Informatics (ČSKI) 2019'
-  pdf: '/awards/cski19.pdf'
-  web: 'http://svobodovacena.ciirc.cvut.cz'
-
-feectu19:
-  id: feectu19
-  title: 'Dean''s Award for Prestigious PhD Thesis'
-  where: 'Faculty of Electrical Engineering, CTU in Prague 2019'
-  pdf: '/awards/feectu19.pdf'
-  web: 'http://www.fel.cvut.cz/cz/aktuality/2019/cena-dekana.html'
-
-cvww18:
-  id: cvww18
-  title: 'Best Presentation Award'
-  where: 'Computer Vision Winter Workshop (CVWW) 2018'
-  pdf: '/awards/cvww18.pdf'
-
-ucg12:
-  id: ucg12
-  title: 'Best Technical Student University Plaque Award'
-  where: 'University of Montenegro 2012'
-
-ikcg12:
-  id: ikcg12
-  title: 'Exceptional Technical Student Award'
-  where: 'Engineers'' Chamber of Montenegro 2012'
-
-epcg11:
-  id: epcg11
-  title: 'Top 5 Electrical Engineering Students Award'
-  where: 'Electrical Power Company of Montenegro 2011'
-
-podgorica10:
-  id: podgorica10
-  title: 'Exceptional Student Capital City Award'
-  where: 'Capital City Podgorica 2010'
-
-canu10:
-  id: canu10
-  title: 'Best Science Student Award'
-  where: 'Montenegrin Academy of Sciences and Arts 2010'
-
-etfucg:
-  id: etfucg
-  title: 'Exceptional Student Faculty Award'
-  where: 'FEE, University of Montenegro 2009, 2010, 2011'
+brazil:
+  id: brazil 
+  title: 'International Ph.D Students Mobility, EIPHI-BFC'
+  where: 'UBFC/UFRJ'
+  
+vinci:
+  id: vinci
+  title: 'Bando Vinci 2019: aides a la mobilité pour theses en cotutelle'
+  where: 'Université Franco Italienne'
