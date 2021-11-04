@@ -122,17 +122,17 @@ projects:
   limit: 10
   exclude:
     archived: false
-    forks: true
+    forks: false
     projects:
       - lmarangio.github.io
   external: # static repo jsons in _data/projects.yml
     projects:
       - tma
 
-# Repositories not owned by me
-#jekyll_get_json:
-#  - data: gtolias/tma
-#    json: 'https://api.github.com/repos/gtolias/tma'
+Repositories not owned by me
+jekyll_get_json:
+  - data: gtolias/tma
+   json: 'https://api.github.com/repos/gtolias/tma'
 
 social_media:
   googlescholar: YE9A7UEAAAAJ
@@ -141,8 +141,6 @@ social_media:
 social_media_short:
   researchgate: Luigi Marangio
   linkedin: lmarangio
-  #facebook: filipradenovic.io
-  #instagram: filip_radenovic
 
 # topics:
 #   - name: CSS
