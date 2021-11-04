@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/lmarangio/lmarangio.github.io",
-  "build_revision": "3268c2fbdd59151bd6c0c2d310e2cf634ad90eb1",
+  "build_revision": "f078c45305fdbf52fd6a5dd96709528f31508ba1",
   "clone_url": "https://github.com/lmarangio/lmarangio.github.io.git",
   "contributors": [
     {
@@ -24,7 +24,7 @@
       "received_events_url": "https://api.github.com/users/lmarangio/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 28
+      "contributions": 29
     }
   ],
   "disabled": false,
@@ -346,8 +346,8 @@
       "releases_url": "https://api.github.com/repos/lmarangio/lmarangio.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/lmarangio/lmarangio.github.io/deployments",
       "created_at": "2019-09-15 11:54:24 UTC",
-      "updated_at": "2021-11-04 15:09:10 UTC",
-      "pushed_at": "2021-11-04 15:09:07 UTC",
+      "updated_at": "2021-11-04 15:13:25 UTC",
+      "pushed_at": "2021-11-04 15:13:22 UTC",
       "git_url": "git://github.com/lmarangio/lmarangio.github.io.git",
       "ssh_url": "git@github.com:lmarangio/lmarangio.github.io.git",
       "clone_url": "https://github.com/lmarangio/lmarangio.github.io.git",
@@ -610,4 +610,4 @@
   },
   "wiki_url": "https://github.com/lmarangio/lmarangio.github.io/wiki",
   "zip_url": "https://github.com/lmarangio/lmarangio.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000000014ad03f68 @key="title", @value=#<Proc:0x000000014ad03f90@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x000000014ad03e78 @key="description", @value=#<Proc:0x000000014ad03ea0@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x00000001386c78a0 @key="title", @value=#<Proc:0x00000001386c78c8@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x00000001386c7788 @key="description", @value=#<Proc:0x00000001386c77b0@/Library/Ruby/Gems/2.6.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET
