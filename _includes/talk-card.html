@@ -1,0 +1,27 @@
+{% if site.style == 'dark' %}
+  {% assign icon_style = 'd-inline-block text-gray-extra-light mr-1' %}
+{% else %}
+  {% assign icon_style = 'd-inline-block text-gray mr-1' %}
+{% endif %}
+
+<div class="height-full width-full text-left">
+  <div class="{% if site.style == 'dark' %}text-white{% else %}text-black{% endif %} ws-normal">
+    <span class="{% if site.style == 'dark' %}text-white{% else %}text-black{% endif %} d-inline-block text-bold ws-normal">{{ talk.title }},</span>
+    <span class="{% if site.style == 'dark' %}text-gray-extra-light{% else %}text-black{% endif %} d-inline-block ws-normal mr-2">{{ talk.where }}</span>
+    {%if talk.slides %}
+      <a href="{{ talk.slides }}" class="{{ icon_style }}">
+        {% octicon file height:16 class:"mr-1" fill:{{ icon_color }} aria-label:file %}
+      </a>
+    {% endif %}
+    {%if talk.web %}
+      <a href="{{ talk.web }}" class="{{ icon_style }}">
+        {% octicon globe height:16 class:"mr-1" fill:{{ icon_color }} aria-label:globe %}
+      </a>
+    {% endif %}
+    {%if talk.video %}
+      <a href="{{ talk.video }}" class="{{ icon_style }}">
+        {% octicon play height:16 class:"mr-1" fill:{{ icon_color }} aria-label:play %}
+      </a>
+    {% endif %}
+  </div>
+</div>

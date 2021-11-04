@@ -743,6 +743,10 @@
         "color": "#e16737",
         "url": "https://github.com/trending?l=Matlab"
     },
+    "MATLAB": {
+        "color": "#e16737",
+        "url": "https://github.com/trending?l=MATLAB"
+    },
     "Max": {
         "color": "#c4a79c",
         "url": "https://github.com/trending?l=Max"

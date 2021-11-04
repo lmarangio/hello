@@ -5,11 +5,20 @@
     {% include masthead.html metadata=true %}
 
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
+      <!-- {% include navigation.html %} -->
       {{ content }}
     </div>
 
     <div class="my-6">
-      {% include projects.html %}
+      {% include news.html %}
+    </div>
+
+    <div class="my-6">
+      {% include awards.html %}
+    </div>
+
+    <div class="my-6">
+      {% include talks.html %}
     </div>
 
     {% if site.topics %}
@@ -26,19 +35,37 @@
   </div>
 {% else %}
   <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
-    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
-      {% include masthead.html metadata=true %}
-    </div>
 
-    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+    {% include masthead.html metadata=true %}
+
+    <div id="content" class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
       <div class="mx-auto" style="max-width: 900px;">
+
+        <!-- {% include navigation.html %} -->
+
+        <h1 class="mb-6 {% if site.style == 'dark' %}text-white{% endif %}">About</h1>
+
+        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+          {{ content }}
+          <p>I am a Research Scientist at <a href="https://ai.facebook.com" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Facebook AI</a> in Menlo Park, California.</p>
+          <p>
+          I obtained my PhD degree under the supervision of <a href="http://cmp.felk.cvut.cz/~chum" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Ondrej Chum</a> in the <a href="https://cyber.felk.cvut.cz/category/department/cmp/gmatas" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Visual Recognition Group</a> of the Faculty of Electrical Engineering, Czech Technical University in Prague.
+          I completed my MSc degree in the University of Montenegro.
+          </p>
+          <p>My research is on computer vision with a focus on large scale visual retrieval and recognition.</p>
+        </div>
+
         {% unless content == ""  %}
           <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
             {{ content }}
           </div>
         {% endunless %}
 
-        {% include projects.html %}
+        {% include news.html %}
+
+        {% include awards.html %}
+
+        {% include talks.html %}
 
         {% if site.topics %}
           {% include interests.html %}

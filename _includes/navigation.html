@@ -1,0 +1,5 @@
+<nav class="mb-6">
+  {% for item in site.data.navigation %}
+    <a class="f2 mr-6 {% if site.style == 'dark' %}text-white{% endif %} {% if page.url == item.link %}text-underline{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+  {% endfor %}
+</nav>

@@ -1,5 +1,10 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I have built or helped to build</p>
+<h1 class="mb-6 {% if site.style == 'dark' %}text-white{% endif %}">Code and Data</h1>
+
+{% assign service = site.data.social_media['github'] %}
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+  <a href="{{ service.profile_url_prefix }}{{ site.social_media['github'] }}" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">{{ service.name }}</a> projects I have worked on.
+</p>
+
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
@@ -17,11 +22,32 @@
     {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
   {% endif %}
 
+  <!-- GitHub repositories owned by me -->
   {% for repository in filtered_repos | limit: site.projects.limit %}
     {% unless site.projects.exclude.projects contains repository.name %}
-      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-3">
         {% include repo-card.html %}
       </div>
     {% endunless %}
   {% endfor %}
+
+  <!-- GitHub repositories not owned by me -->
+  {% for data in site.data %}
+    {% for repository in data %}
+      {% if repository contains 'git_url' %}
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+          {% include repo-card.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  <!-- External repositories added through _data/projects.yml -->
+  <!-- {% for repo_name in site.projects.external.projects %}
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+      {% assign repository = site.data.projects[repo_name] %}
+      {% include repo-card.html %}
+    </div>
+  {% endfor %} -->
+
 </div>

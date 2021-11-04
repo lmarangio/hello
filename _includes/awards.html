@@ -1,0 +1,12 @@
+<h2 class="mb-4 {% if site.style == 'dark' %}text-white{% endif %}">Awards</h2>
+
+<div class="d-sm-flex flex-wrap gutter-condensed mb-6 ml-2">
+  {% for award_id in site.awards %}
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+      <div class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">
+        {% assign award = site.data.awards[award_id] %}
+        {% include award-card.html %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

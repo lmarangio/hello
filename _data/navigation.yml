@@ -1,0 +1,6 @@
+- name: About
+  link: /
+- name: Publications
+  link: /publications/
+- name: Code & Data
+  link: /projects/

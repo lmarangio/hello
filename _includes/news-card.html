@@ -1,0 +1,4 @@
+<div class="height-full width-full text-left">
+    <span class="{% if site.style == 'dark' %}text-gray-extra-light{% else %}text-black{% endif %} d-inline-block text-bold text-mono ws-normal mr-2 f6">{{ news.date | date: "%b %Y"}}:</span>
+    <span class="{% if site.style == 'dark' %}text-white{% else %}text-black{% endif %} ws-normal">{{ news.content }}</span>
+</div>

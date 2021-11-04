@@ -1,0 +1,92 @@
+{% if site.style == 'dark' %}
+  {% assign icon_style = 'd-inline-block text-gray-extra-light mr-3' %}
+{% else %}
+  {% assign icon_style = 'd-inline-block text-gray mr-3' %}
+{% endif %}
+
+<script>
+  // toggle BibTeX display
+  function toggleBibtex(pub_id) {
+    var bib = document.getElementById(pub_id + '_bib');
+    if (bib) {
+      if (bib.style.display === 'none' || bib.style.display === '') {
+        bib.style.display = 'block';
+      } else {
+          bib.style.display = 'none';
+      }
+    } else {
+      return;
+    }
+  }
+
+  // fill BibTeX component using text from .bib file
+  function getBibtex(pub_id) {
+    var bib_text = document.getElementById(pub_id + '_bib_text');
+    if (bib_text) {
+      var client = new XMLHttpRequest();
+      client.open('GET', '/publications/' + pub_id + '.bib');
+      client.onreadystatechange = function() {
+        bib_text.innerText = client.responseText
+      }
+      client.send();
+    } else {
+        return;
+    }
+  }
+</script>
+
+<div class="height-full width-full text-left {% if site.style == 'dark' %}border border-gray-dark bg-gray-dark{% else %}border border-gray-light bg-white{% endif %} rounded-1 p-3">
+  <div class="{% if site.style == 'dark' %}text-white{% else %}text-black{% endif %} text-bold ws-normal mb-2 f4">{{ pub.title }}</div>
+  <div class="{% if site.style == 'dark' %}text-white{% else %}text-black{% endif %} ws-normal mb-2">{{ pub.authors }}</div>
+  <div class="{% if site.style == 'dark' %}text-gray-extra-light{% else %}text-black{% endif %} mb-2">{{ pub.where }}</div>
+  <div class="{% if site.style == 'dark' %}text-gray-extra-light{% else %}text-gray{% endif %} ws-normal">
+    {% if pub.files %}
+      {%if pub.files contains "pdf" %}
+        <a href="/publications/{{ pub.id }}.pdf" class="{{ icon_style }}">
+          {% octicon file height:16 class:"mr-1" fill:{{ icon_color }} aria-label:file %}pdf
+        </a>
+      {% endif %}
+      {%if pub.files contains "bib" %}
+        <a href="/publications/{{ pub.id }}.bib" onclick="toggleBibtex('{{ pub.id }}');return false;" class="{{ icon_style }}">
+          {% octicon file-code height:16 class:"mr-1" fill:{{ icon_color }} aria-label:file-code %}bib
+        </a>
+      {% endif %}
+      {%if pub.files contains "poster" %}
+        <a href="/publications/{{ pub.poster }}poster.pdf" class="{{ icon_style }}">
+          {% octicon image height:16 class:"mr-1" fill:{{ icon_color }} aria-label:image %}poster
+        </a>
+      {% endif %}
+      {%if pub.files contains "slides" %}
+        <a href="/publications/{{ pub.id }}slides.pdf" class="{{ icon_style }}">
+          {% octicon device-desktop height:16 class:"mr-1" fill:{{ icon_color }} aria-label:device-desktop %}slides
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if pub.video %}
+      <a href="{{ pub.video }}" class="{{ icon_style }}">
+        {% octicon play height:16 class:"mr-1" fill:{{ icon_color }} aria-label:play %}video
+      </a>
+    {% endif %}
+    {% if pub.spotlight %}
+      <a href="{{ pub.spotlight }}" class="{{ icon_style }}">
+        {% octicon play height:16 class:"mr-1" fill:{{ icon_color }} aria-label:play %}spotlight
+      </a>
+    {% endif %}
+    {% if pub.oral %}
+      <a href="{{ pub.oral }}" class="{{ icon_style }}">
+        {% octicon play height:16 class:"mr-1" fill:{{ icon_color }} aria-label:play %}oral
+      </a>
+    {% endif %}
+    {% if pub.code %}
+      <a href="{{ pub.code }}" class="{{ icon_style }}">
+        {% octicon code-square height:16 class:"mr-1" fill:{{ icon_color }} aria-label:code-square %}code
+      </a>
+    {% endif %}
+  </div>
+  {% if pub.files and pub.files contains "pdf" %}
+    <div id="{{ pub.id }}_bib" style="display: none" class="height-full width-full text-left {% if site.style == 'dark' %}border border-gray-dark bg-gray-dark{% else %}border border-gray-light bg-white{% endif %} rounded-1 mt-3 p-2 pl-3">
+      <pre id="{{ pub.id }}_bib_text" class="{% if site.style == 'dark' %}text-gray-extra-light{% endif %} overflow-auto"></pre>
+      <script>getBibtex('{{ pub.id }}')</script>
+    </div>
+  {% endif %}
+</div>

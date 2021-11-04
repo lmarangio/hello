@@ -1,10 +1,25 @@
-layout: sidebar
-style: light
+repository: lmarangio/lmarangio.github.io
+
+layout: sidebar # sidebar | stacked
+style: dark # light | dark
 
 plugins:
+  # GitHub Pages plugins
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
   - jemoji
+
+  # Other plugins
+  - jekyll-get-json
 
 permalink: /:year/:month/:day/:title/
 
@@ -16,43 +31,126 @@ defaults:
     values:
       layout: "post"
 
+updates:
+  limit: 10
+  news:
+    - date: '2020-07-01'
+      content: 'Query expansion learning paper accepted to ECCV 2020.'
+    - date: '2020-06-01'
+      content: 'Received Outstanding Reviewer award at the CVPR 2020.'
+    - date: '2020-05-01'
+      content: Received Antonin Svoboda <a class="text-white text-underline link-hover-gray-extra-light" href="/awards/cski19.pdf">award</a> for the Best PhD Thesis in 2019 from Czech Society for Cybernetics and Informatics.
+    - date: '2019-09-01'
+      content: 'Started Research Scientist position at <a class="text-white text-underline link-hover-gray-extra-light" href="https://ai.facebook.com/">Facebook AI</a> in Menlo Park.'
+    - date: '2019-09-01'
+      content: 'Received Dean''s <a class="text-white text-underline link-hover-gray-extra-light" href="/awards/feectu19.pdf">award</a> for Prestigious PhD Thesis from the Faculty of Electrical Engineering, CTU in Prague.'
+    - date: '2019-08-01'
+      content: 'Defended <a class="text-white text-underline link-hover-gray-extra-light" href="/publications/r19.pdf">PhD Thesis</a> at the Czech Technical University in Prague.'
+    - date: '2019-07-01'
+      content: 'Targeted mismatch adversarial attack <a class="text-white text-underline link-hover-gray-extra-light" href="/publications/trc19.pdf">paper</a> accepted to ICCV. <a class="text-white text-underline link-hover-gray-extra-light" href="https://github.com/gtolias/tma">Code</a> available.'
+    - date: '2019-06-01'
+      content: 'Received Outstanding Reviewer award at the CVPR 2019.'
+    - date: '2019-06-01'
+      content: 'Our team was ranked 9th / 11th in the Google Landmark <a class="text-white text-underline link-hover-gray-extra-light" href="https://www.kaggle.com/c/landmark-retrieval-2019">Retrieval</a> / <a class="text-white text-underline link-hover-gray-extra-light" href="https://www.kaggle.com/c/landmark-recognition-2019">Recognition</a> 2019 Challenges.'
+    - date: '2018-07-01'
+      content: 'Two papers accepted to ECCV 2018: <a class="text-white text-underline link-hover-gray-extra-light" href="/publications/rtc18.pdf">Deep Shape Matching</a> and <a class="text-white text-underline link-hover-gray-extra-light" href="/publications/mrm18.pdf">Learning Affine Regions</a>.'
+    - date: '2018-06-01'
+      content: 'Our team was ranked 3rd / 6th in the Google Landmark <a class="text-white text-underline link-hover-gray-extra-light" href="https://www.kaggle.com/c/landmark-recognition-challenge">Recognition</a> / <a class="text-white text-underline link-hover-gray-extra-light" href="https://www.kaggle.com/c/landmark-retrieval-challenge">Retrieval</a> Challenges.'
+    - date: '2018-04-01'
+      content: 'Large-scale image retrieval benchmarking <a class="text-white text-underline link-hover-gray-extra-light" href="/publications/rit18.pdf">paper</a> accepted to CVPR as poster. <a class="text-white text-underline link-hover-gray-extra-light" href="http://cmp.felk.cvut.cz/revisitop/">Code and data</a> available.'
+
+awards:
+  - reviewer
+  - ctu19
+  - cski19
+  - feectu19
+  # - cvww18
+  - ucg12
+  - ikcg12
+  - epcg11
+  - podgorica10
+  - canu10
+  - etfucg
+
+talks:
+  - fhua18
+  - mlmu17
+  - mlpw17
+  - prcvc15
+
+publications:
+  - year: 2021
+    pubs:
+      # - dtp+21
+      - rsg+21
+  - year: 2020
+    pubs:
+      - grb20
+  - year: 2019
+    pubs:
+      - r19
+      - trc19
+      - rtc19
+  - year: 2018
+    pubs:
+      - rtc18
+      - rit+18
+      - mrm18
+  - year: 2017
+    pubs:
+      - mmrm17
+  - year: 2016
+    pubs:
+      - rtc16
+      - rsj+16
+  - year: 2015
+    pubs:
+      - rjc15
+      - srcf15
+      - shr+15
+      - cvh+15
+  - year: 2014
+    pubs:
+      - mrcm14
+  - year: 2013
+    pubs:
+      - spr13
+      - prs13
+
 projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
+  sort_by: stars # pushed | stars
+  limit: 10
   exclude:
     archived: false
-    forks: false
+    forks: true
     projects:
-    # - repo-name
+      - lmarangio.github.io
+  external: # static repo jsons in _data/projects.yml
+    projects:
+      - tma
 
-# social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
+# Repositories not owned by me
+jekyll_get_json:
+  - data: gtolias/tma
+    json: 'https://api.github.com/repos/gtolias/tma'
+
+social_media:
+  #googlescholar: LV6XQ00AAAAJ
+  github: lmarangio
+
+social_media_short:
+  researchgate: Luigi Marangio
   linkedin: lmarangio
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+  #facebook: filipradenovic.io
+  #instagram: filip_radenovic
 
-topics:
-  - name: Python
-    web_url: https://github.com/topics/python
-    #image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+# topics:
+#   - name: CSS
+#     web_url: https://github.com/topics/css
+#     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  - name: Data Science
+#   - name: Web design
 
-  - name: Julia
-    web_url: https://github.com/topics/julia
-    #image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+#   - name: Sass
+#     web_url: https://github.com/topics/sass
+#     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png

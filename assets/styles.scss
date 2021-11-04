@@ -52,3 +52,53 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+html {
+  overflow-y: scroll;
+}
+
+.navigation-white ul li a {
+  text-decoration: none;
+}
+
+.navigation-white ul li a:hover,
+.navigation-selected-white {
+  color: #ffffff;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+}
+
+.link-hover-gray-extra-light:hover {
+  color:#959da5 !important
+}
+
+.text-gray-extra-light {
+  color:#959da5 !important;
+}
+
+@media (min-width: 768px) {
+#masthead {
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+#content {
+  margin-left: 41.66667%;
+}
+.navigation-white {
+  margin-top: 6rem;
+}
+}
+
+@media (min-width: 1012px) {
+#content {
+  margin-left: 33.33333%;
+}
+}
+
+@media (min-width: 1280px) {
+#content {
+  margin-left: 25%;
+}
+}

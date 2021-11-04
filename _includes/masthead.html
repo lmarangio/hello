@@ -1,54 +1,81 @@
 {% if site.layout == 'stacked' %}
   {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
 {% else %}
-  {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
+  {% assign metadata_styles = 'd-flex flex-items-center mb-1' %}
 {% endif %}
 
-<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
-<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  {{ user.bio }}
-</p>
+<div id="masthead" class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
 
-{% if include.metadata %}
-  <div class="f4 mb-6">
-    {% if user.name %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          @{{ user.login }}
+  <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+  <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{{ user.name }}</h1>
+  <p class="f4 mb-2 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+    Research Scientist at <a href="https://ai.facebook.com" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Facebook AI</a>
+  </p>
+
+  {% if include.metadata %}
+    <div class="f4 mb-6">
+      <!-- location -->
+      <div class="{{ metadata_styles }} mb-4 {% if site.style == 'dark' %}text-white{% endif %}">
+        {% octicon location height:20 width:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:location %}
+        Menlo Park, California
+      </div>
+
+      <!-- cv -->
+      <div class="{{ metadata_styles }} mb-2">
+        {% octicon file height:20 width:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file %}
+        <a href="https://filipradenovic.github.io/cv/FilipRadenovicCV-2020-02-19.pdf" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          Curriculum Vitae
         </a>
       </div>
-    {% endif %}
-    {% if user.email %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
+
+      <!-- email -->
+      <div class="{{ metadata_styles }} mb-4">
+        {% octicon mail height:20 width:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:mail %}
+        <a href="mailto:filipradenovic@fb.com" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          filipradenovic@fb.com
         </a>
       </div>
-    {% endif %}
-    {% if user.location %}
-      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
-        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-        {{ user.location }}
+
+      <!-- social media -->
+      {% if site.social_media %}
+        <div class="f4 mb-4">
+          {% for account in site.social_media %}
+            <div class="{{ metadata_styles }} mb-1">
+              {% assign service_shortname = account[0] %}
+              {% assign service = site.data.social_media[service_shortname] %}
+              {{ service.icon_svg }}
+              <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="{% if site.style == 'dark' %}text-white{% endif %} ml-2">
+                {{ service.name }}<span class="d-none">{{ service.name }}</span>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- social media short -->
+      {% if site.social_media_short %}
+        <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
+          {% for account in site.social_media_short %}
+            <div class="{% unless forloop.last == true %}mr-3{% endunless %} mb-3">
+              {% assign service_shortname = account[0] %}
+              {% assign service = site.data.social_media[service_shortname] %}
+              <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="tooltipped tooltipped-se" aria-label="{{ service.name }}: {{ account[1] }}">
+                {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="navigation-white">
+        <ul class="mt-6">
+          {% for item in site.data.navigation %}
+            <li class="mb-4"> <a class="f4 text-white {% if page.url == item.link %} navigation-selected-white {% endif %}" href="{{ item.link }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
-    {% endif %}
-    {% if site.social_media %}
-      <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
-        {% for account in site.social_media %}
-          <div class="{% unless forloop.last == true %}mr-3{% endunless %} mb-3">
-            {% assign service_shortname = account[0] %}
-            {% assign service = site.data.social_media[service_shortname] %}
-            <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="tooltipped tooltipped-se" aria-label="{{ service.name }}: {{ account[1] }}">
-              {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
-  </div>
-{% endif %}
+
+    </div>
+  {% endif %}
+
+</div>

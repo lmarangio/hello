@@ -1,0 +1,185 @@
+dtp+21:
+  id: dtp+21
+  title: 'The 2021 Image Similarity Dataset and Challenge'
+  authors: 'Douze M., Tolias G., Pizzi E., Papakipos Z., Chanussot L., <b>Radenović F.</b>, Jenicek T., Maximov M., Leal-Taixe L., Elezi I., Chum O., Canton-Ferrer C.'
+  where: 'arXiv 2021'
+  files:
+    - pdf
+    - bib
+
+rsg+21:
+  id: rsg+21
+  title: 'Large-Scale Attribute-Object Compositions'
+  authors: '<b>Radenović F.</b>, Sinha A., Gordo A., Berg T., Mahajan D.'
+  where: 'arXiv 2021'
+  files:
+    - pdf
+    - bib
+
+grb20:
+  id: grb20
+  title: 'Attention-Based Query Expansion Learning'
+  authors: 'Gordo A., <b>Radenović F.</b>, Berg T.'
+  where: 'European Conference on Computer Vision (ECCV) 2020'
+  files:
+    - pdf
+    - bib
+
+r19:
+  id: r19
+  title: 'Visual Retrieval with Compact Image Representations'
+  authors: '<b>Radenović F.</b>, Chum O. (supervisor)'
+  where: 'PhD thesis, CTU in Prague 2019'
+  files:
+    - pdf
+    - bib
+    - slides
+  # webpage: 'http://cmp.felk.cvut.cz/~radenfil/projects/thesis'
+
+trc19:
+  id: trc19
+  title: 'Targeted Mismatch Adversarial Attack: Query with a Flower to Retrieve the Tower'
+  authors: 'Tolias G., <b>Radenović F.</b>, Chum O.'
+  where: 'International Conference on Computer Vision (ICCV) 2019'
+  files:
+    - pdf
+    - bib
+  code: 'https://github.com/gtolias/tma'
+
+rtc19:
+  id: rtc19
+  title: 'Fine-tuning CNN Image Retrieval with No Human Annotation'
+  authors: '<b>Radenović F.</b>, Tolias G., Chum O.'
+  where: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2019'
+  files:
+    - pdf
+    - bib
+  code: 'http://cmp.felk.cvut.cz/cnnimageretrieval'
+
+rtc18:
+  id: rtc18
+  title: 'Deep Shape Matching'
+  authors: '<b>Radenović F.</b>, Tolias G., Chum O.'
+  where: 'European Conference on Computer Vision (ECCV) 2018'
+  files:
+    - pdf
+    - bib
+  code: 'http://cmp.felk.cvut.cz/cnnimageretrieval'
+
+mrm18:
+  id: mrm18
+  title: 'Repeatability Is Not Enough: Learning Affine Regions via Discriminability'
+  authors: 'Mishkin D., <b>Radenović F.</b>, Matas J.'
+  where: 'European Conference on Computer Vision (ECCV) 2018'
+  files:
+    - pdf
+    - bib
+  code: 'https://github.com/ducha-aiki/affnet'
+
+rit+18:
+  id: rit+18
+  title: 'Revisiting Oxford and Paris: Large-Scale Image Retrieval Benchmarking'
+  authors: '<b>Radenović F.</b>, Iscen A., Tolias G., Avrithis Y., Chum O.'
+  where: 'Conference on Computer Vision and Pattern Recognition (CVPR) 2018'
+  files:
+    - pdf
+    - bib
+  code: 'http://cmp.felk.cvut.cz/revisitop'
+
+mmrm17:
+  id: mmrm17
+  title: "Working hard to know your neighbor's margins: Local descriptor learning loss"
+  authors: 'Mishchuk A., Mishkin D., <b>Radenović F.</b>, Matas J.'
+  where: Conference on Neural Information Processing Systems (NeurIPS) 2017
+  files:
+    - pdf
+    - bib
+  code: 'https://github.com/DagnyT/hardnet'
+
+rtc16:
+  id: rtc16
+  title: 'CNN Image Retrieval Learns from BoW: Unsupervised Fine-Tuning with Hard Examples'
+  authors: '<b>Radenović F.</b>, Tolias G., Chum O.'
+  where: 'European Conference on Computer Vision (ECCV) 2016'
+  files:
+    - pdf
+    - bib
+    - slides
+  oral: 'http://videolectures.net/eccv2016_radenovic_cnn_image/?q=Filip%20Radenovic'
+  code: 'http://cmp.felk.cvut.cz/cnnimageretrieval'
+
+rsj+16:
+  id: rsj+16
+  title: 'From Dusk till Dawn: Modeling in the Dark'
+  authors: '<b>Radenović F.</b>, Schönberger J. L., Ji D., Frahm J., Chum O., Matas J.'
+  where: 'Conference on Computer Vision and Pattern Recognition (CVPR) 2016'
+  files:
+    - pdf
+    - bib
+    - slides
+  spotlight: 'https://youtu.be/cCLixYZicuM'
+
+shr+15:
+  id: shr+15
+  title: 'Hyperpoints and Fine Vocabularies for Large-Scale Location Recognition'
+  authors: 'Sattler T., Havlena M., <b>Radenović F.</b>, Schindler K., Pollefeys M.'
+  where: 'International Conference on Computer Vision (ICCV) 2015'
+  files:
+    - pdf
+    - bib
+
+cvh+15:
+  id: cvh+15
+  title: 'Camera Elevation Estimation from a Single Mountain Landscape Photograph'
+  authors: 'Čadík M., Vašíček J., Hradiš M., <b>Radenović F.</b>, Chum O.'
+  where: 'British Machine Vision Conference (BMVC) 2015'
+  files:
+    - pdf
+    - bib
+
+rjc15:
+  id: rjc15
+  title: 'Multiple Measurements and Joint Dimensionality Reduction for Large Scale Image Search with Short Vectors'
+  authors: '<b>Radenović F.</b>, Jégou H., Chum O.'
+  where: 'International Conference on Multimedia Retrieval (ICMR) 2015'
+  files:
+    - pdf
+    - bib
+    - slides
+
+srcf15:
+  id: srcf15
+  title: 'From Single Image Query to Detailed 3D Reconstruction'
+  authors: 'Schönberger J. L., <b>Radenović F.</b>, Chum O., Frahm J.'
+  where: Conference on Computer Vision and Pattern Recognition (CVPR) 2015
+  files:
+    - pdf
+    - bib
+  video: 'https://youtu.be/DIv1aGKqSIk'
+
+mrcm14:
+  id: mrcm14
+  title: 'Efficient Image Detail Mining'
+  authors: 'Mikulík A., <b>Radenović F.</b>, Chum O., Matas J.'
+  where: 'Asian Conference on Computer Vision (ACCV) 2014'
+  files:
+    - pdf
+    - bib
+
+spr13:
+  id: spr13
+  title: 'Genetic algorithm for rigid body reconstruction after micro-Doppler removal in the radar imaging analysis'
+  authors: 'Stanković L., Popović-Bugarin V., <b>Radenović F.</b>'
+  where: 'Signal Processing 2013'
+  files:
+    - pdf
+    - bib
+
+prs13:
+  id: prs13
+  title: 'Analytical Rigid Body Reconstruction after Micro-Doppler Removal'
+  authors: 'Popović-Bugarin V., <b>Radenović F.</b>, Stanković L.'
+  where: 'International Symposium on Image and Signal Processing (ISPA) 2013'
+  files:
+    - pdf
+    - bib

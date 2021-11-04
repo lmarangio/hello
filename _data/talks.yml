@@ -1,0 +1,27 @@
+fhua18:
+  id: fhua18
+  title: 'Large Scale Image Retrieval'
+  where: 'Upper Austria University of Applied Sciences, Hagenberg 2018'
+  # slides: '/talks/fhua18.pdf'
+
+mlmu17:
+  id: mlmu17
+  title: 'Image Retrieval Overview'
+  where: 'Machine Learning Meetups, Prague 2017'
+  # slides: '/talks/mlmu17.pdf'
+  web: 'http://www.mlmu.cz/archiv'
+  video: 'https://youtu.be/N21LfZc110w'
+
+mlpw17:
+  id: mlpw17
+  title: 'Image Retrieval: From basics to recent advances'
+  where: Machine Learning Prague Workshop 2017
+  # slides: '/talks/mlpw17.pdf'
+  web: 'http://2017.mlprague.com'
+
+prcvc15:
+  id: prcvc15
+  title: 'Image Retrieval 2.0'
+  where: 'Pattern Recognition and Computer Vision Colloquium, Prague 2015'
+  # slides: '/talks/prcvc15.pdf'
+  web: 'http://cmp.felk.cvut.cz/cmp/events/colloquium-2015.11.12'

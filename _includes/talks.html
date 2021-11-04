@@ -1,0 +1,12 @@
+<h2 class="mb-4 {% if site.style == 'dark' %}text-white{% endif %}">Invited Talks</h2>
+
+<div class="d-sm-flex flex-wrap gutter-condensed mb-6 ml-2">
+  {% for talk_id in site.talks %}
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-2">
+      <div class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">
+        {% assign talk = site.data.talks[talk_id] %}
+        {% include talk-card.html %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
