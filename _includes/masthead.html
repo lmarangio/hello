@@ -9,7 +9,7 @@
   <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
   <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{{ user.name }}</h1>
   <p class="f4 mb-2 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-    Math Researcher at <a href="http://www.dm.unipi.it/webnew/" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Pisa University</a>
+    Algorithm Developer at <a href="https://www.randstad.it" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">Randstad</a>
   </p>
 
   {% if include.metadata %}
@@ -17,7 +17,7 @@
       <!-- location -->
       <div class="{{ metadata_styles }} mb-4 {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 width:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:location %}
-        Pisa, Italy
+        Milan, Italy
       </div>
 
       <!-- cv -->
