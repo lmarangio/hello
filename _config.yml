@@ -43,7 +43,7 @@ updates:
     - date: '31/10/2021'
       content: 'New paper coming up: A posteriori validated numerical method for the computation of stationary measures based on Fourier approximation.'
     - date: '5/10/2021'
-      content: ''my first author article <a href="https://link.springer.com/article/10. 1007/s10955-019-02421-1" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">((here!)))</a>, has been cited in the 2021 Physics Nobel prize literature
+      content: 'my first author article <a href="https://link.springer.com/article/10. 1007/s10955-019-02421-1" class="text-underline {% if site.style == 'dark' %}text-white link-hover-gray-extra-light{% endif %}">((here!)))</a>, has been cited in the 2021 Physics Nobel prize literature.'
     - date: '01/06/2021'
       content: 'Started Math Research position at Mathematics department in Pisa, Italy.'
     - date: '27/04/2021'
