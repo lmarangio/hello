@@ -34,6 +34,8 @@ defaults:
 updates:
   limit: 8
   news:
+    - date: '01/03/2022'
+      content: 'Start working for Channable as Integrations Engineer'
     - date: '15/11/2021'
       content: 'Start working for Randstad as Algorithm Developer (Python)'
     - date: '11/2021'
