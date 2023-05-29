@@ -34,10 +34,16 @@ defaults:
 updates:
   limit: 8
   news:
+    - date: '29/05/2023'
+      content: 'Pushed my firsts Q# algorithms.'    
+    - date: '24/05/2023'
+      content: 'Got certification in Digital Fashion Innovation Specialization, Coursera'  
+    - date: '15/03/2023'
+      content: 'Start working at Esprit as Integrations Engineer'
     - date: '01/03/2022'
-      content: 'Start working for Channable as Integrations Engineer'
+      content: 'Start working at Channable as Integrations Engineer'
     - date: '15/11/2021'
-      content: 'Start working for Randstad as Algorithm Developer (Python)'
+      content: 'Start working at Randstad as Algorithm Developer (Python)'
     - date: '11/2021'
       content: 'Google Data Analytics Professional Certification, Ask Questions to Make Data-Driven Decisions'
     - date: '11/2021'
@@ -45,7 +51,7 @@ updates:
     - date: '31/10/2021'
       content: 'New paper coming up: A posteriori validated numerical method for the computation of stationary measures based on Fourier approximation.'
     - date: '5/10/2021'
-      content: 'my first author article on the Arnold maps, has been cited in the 2021 Physics Nobel prize literature.'
+      content: 'My first author article on the Arnold maps, has been cited in the 2021 Physics Nobel prize literature.'
     - date: '01/06/2021'
       content: 'Started Math Research position at Mathematics department in Pisa, Italy.'
     - date: '27/04/2021'
